@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- Designed by R -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryota">
+        <!-- This is my second web page. -->
+        <title>Enigma for Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script src="enigma.js"></script>
+    </head>
+    <body>
+        <header><h1 class="Title-txt">Enigma</h1></header>
+        <!-- Setting -->
+        <article class="Heading">
+            <h2>Setting</h2>
+            <h3>Rotor Choice</h3>
+            <section class="Subheading">
+                <p>Set the rotor numbers.</p>
+                <div>
+                    <span class="rotor-txt">1st : </span>
+                    <span class="rotor-radio">
+                        <label><input type="radio" name="rotor1" value="1" checked>1</label>
+                        <label><input type="radio" name="rotor1" value="2">2</label>
+                        <label><input type="radio" name="rotor1" value="3">3</label>
+                        <label><input type="radio" name="rotor1" value="4">4</label>
+                        <label><input type="radio" name="rotor1" value="5">5</label>
+                        <label><input type="radio" name="rotor1" value="6">6</label>
+                    </span>
+                </div>
+                <div>
+                    <span class="rotor-txt">2nd : </span>
+                    <span class="rotor-radio">
+                        <label><input type="radio" name="rotor2" value="1" checked>1</label>
+                        <label><input type="radio" name="rotor2" value="2">2</label>
+                        <label><input type="radio" name="rotor2" value="3">3</label>
+                        <label><input type="radio" name="rotor2" value="4">4</label>
+                        <label><input type="radio" name="rotor2" value="5">5</label>
+                        <label><input type="radio" name="rotor2" value="6">6</label>
+                    </span>
+                </div>
+                <div>
+                    <span class="rotor-txt">3rd : </span>
+                    <span class="rotor-radio">
+                        <label><input type="radio" name="rotor3" value="1" checked>1</label>
+                        <label><input type="radio" name="rotor3" value="2">2</label>
+                        <label><input type="radio" name="rotor3" value="3">3</label>
+                        <label><input type="radio" name="rotor3" value="4">4</label>
+                        <label><input type="radio" name="rotor3" value="5">5</label>
+                        <label><input type="radio" name="rotor3" value="6">6</label>
+                    </span>
+                </div>
+            </section>
+            <h3>Plug Board</h3>
+            <section class="Subheading">
+                <p>Set the alphabet pairs you want to change.</p>
+                <span class="change">
+                    <select class="selectbox" id="change11">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                    and
+                    <select class="selectbox" id="change12">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                </span>
+                <span class="change">
+                    <select class="selectbox" id="change21">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                    and
+                    <select class="selectbox" id="change22">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                </span>
+                <span class="change">
+                    <select class="selectbox" id="change31">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                    and
+                    <select class="selectbox" id="change32">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                </span>
+            </section>
+            <h3>Initial Shift</h3>
+            <section class="Subheading">
+                <span class="Initial-txt">1st : </span>
+                <span class="Initial-select">
+                    <select class="selectbox" id="Initial1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                </span>
+                <span class="Initial-txt">2nd : </span>
+                <span class="Initial-select">
+                    <select class="selectbox" id="Initial2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                </span>
+                <span class="Initial-txt">3rd : </span>
+                <span class="Initial-select">
+                    <select class="selectbox" id="Initial3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                </span>
+            </section>
+        </article>
+        <!-- Input -->
+        <article class="Heading">
+            <h2>Text</h2>
+            <section class="Subheading">
+                <!-- enter text -->
+                <p>Please enter the text in UPPERCASE. Don't use comma, period and space.</p>
+                <textarea name="Intxt" id="Intxt" cols="80" rows="10"></textarea>
+            </section>
+        </article>
+        <label><input type="button" value="Go" name="Button" onclick="Enigma()" class="Button"></label>
+        <!-- Output -->
+        <article class="Heading">
+            <h2>Result</h2>
+            <p id="Output"></p>
+        </article>
+        <!-- Others -->
+        <article>
+            <p class="date">2021/8/...</p>
+        </article>
+    </body>
+</html>

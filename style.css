@@ -1,0 +1,65 @@
+body{
+    width:1000px;
+    margin-right: auto;
+    margin-left : auto;
+    background-color: whitesmoke;
+    
+}
+header{
+    width:700px;
+    margin-right: auto;
+    margin-left : auto;
+}
+.Heading{
+    width:700px;
+    margin-right: auto;
+    margin-left : 25px;
+}
+.Title-txt{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.Subheading{
+    width: 650px;
+    margin-right: auto;
+    margin-left : 50px;
+}
+.rotor-txt {
+    display: inline-block;
+    width: 50px;
+}
+.rotor-radio {
+    display: inline-block;
+    width: 500px;
+}
+.change{
+    display: inline-block;
+    width: 200px;
+}
+.Initial-txt{
+    display: inline-block;
+    width: 50px;
+}
+.Initial-select{
+    display: inline-block;
+    width: 150px;
+}
+.Button{
+    width: 100px;
+    padding: 5px;
+    margin-right: auto;
+    margin-left : 450px;
+}
+.selectbox{
+    display: inline-block;
+    width: 75px;
+}
+.date{
+    width: 650px;
+    margin-right: 50px;
+    margin-left : 750px;
+}
+html{
+    background-image: url(Brick-Textures_15.jpg);
+}
