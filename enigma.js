@@ -95,6 +95,7 @@ function Enigma(){
     console.log('Finish !');
     return 0;
 }
+
 function rotor(name){
     var element = document.getElementsByName(name);
     for(var i = 0; i < element.length; i++){
@@ -137,7 +138,7 @@ function RotorR(rn, temp, role){
     }
     for(var n = 0; n < 26; n++){
         if(temp == r[n]){
-            temp = Alphabet[(26 * (1 + Math.floor(role / 26)) + n - role) % 26];
+            temp = Alphabet[(26 * Math.ceil(role / 26) + n - role) % 26];
             break;
         }
     }
