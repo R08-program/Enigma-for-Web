@@ -11,7 +11,7 @@ header{
     margin-left : auto;
 }
 .Heading{
-    width:700px;
+    width:900px;
     margin-right: auto;
     margin-left : 25px;
 }
@@ -21,7 +21,7 @@ header{
     margin-bottom: 0;
 }
 .Subheading{
-    width: 650px;
+    width: 850px;
     margin-right: auto;
     margin-left : 50px;
 }
@@ -62,4 +62,9 @@ header{
 }
 html{
     background-image: url(Brick-Textures_15.jpg);
+}
+.explanation{
+    width: 850px;
+    margin-right: auto;
+    margin-left : 50px;
 }
